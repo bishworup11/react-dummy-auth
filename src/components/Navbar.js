@@ -4,7 +4,7 @@ import { GiRunningNinja } from "react-icons/gi";
 import { Link } from "react-router-dom";
 export default function Navbar({isLoggedIn,onLogout}) {
   return (
-    <nav className="flex flex-row justify-between items-center m-2 bg-yellow-50">
+    <nav className="w-full flex flex-col md:flex-row justify-between items-center m-2 bg-yellow-50">
       <div className="flex flex-row ml-4 justify-between items-center  text-blue-900 hover:text-red-800 hover:scale-110 transition-all duration-300 ">
         <GiRunningNinja className="size-20" />
         <h1 className="text-2xl font-bold">Ninja Code</h1>
@@ -57,7 +57,7 @@ export default function Navbar({isLoggedIn,onLogout}) {
         )}
       </div>
 
-      <div>
+      <div className="mt-5 md:mt-0 pr-0 lg:pr-10 ">
         <GiDeerHead className="size-20  text-blue-900 hover:text-red-800 hover:scale-110 transition-all duration-300" />
       </div>
     </nav>

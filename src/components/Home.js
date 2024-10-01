@@ -9,6 +9,8 @@ export default function Home() {
 
   const { users, loading, error } = useFetch({ url });
 
+  console.log(users);
+
   useEffect(() => {
     setUrl(`https://dummyjson.com/users?limit=${limit}`);
     if(search) {
@@ -35,7 +37,7 @@ export default function Home() {
       </div>
 
       <button
-        className="bg-blue-500 text-white px-4 py-2 rounded mt-4 w-4/5 p-12 m-5 mx-52 hover:scale-110 transition-all duration-300"
+        className="bg-blue-500 text-white px-4 py-2 rounded mt-4 w-4/5 p-12 m-5 lg:mx-52 hover:scale-110 transition-all duration-300"
         onClick={() => setLimit(limit + 10)}
       >
         Load More
