@@ -28,7 +28,7 @@ Make sure you have the following tools installed:
 
 1. Clone the repository:
    ```bash
-  https://github.com/bishworup11/react-dummy-auth.git
+      https://github.com/bishworup11/react-dummy-auth.git
    ```
 
 2. Navigate to the project directory:
