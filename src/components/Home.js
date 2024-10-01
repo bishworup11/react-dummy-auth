@@ -9,9 +9,6 @@ export default function Home() {
 
   const { users, loading, error } = useFetch({ url });
 
-  fetch('https://dummyjson.com/users/search?q=John')
-
-
   useEffect(() => {
     setUrl(`https://dummyjson.com/users?limit=${limit}`);
     if(search) {
@@ -23,7 +20,8 @@ export default function Home() {
     <div>
       <h1 className="text-3xl font-bold text-center mb-6">User List</h1>
      
-     <input type="text" className="border-2 border-gray-300 rounded-lg p-2" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)} />
+        <span className="text-3xl font-bold text-center m-6">Search</span>
+       <input type="text" className="border-2 border-gray-300 rounded-lg p-2" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)} />
 
       <div className="m-3 mr-16 ml-16 flex  flex-row flex-wrap  justify-between gap-2">
         {loading ? (
