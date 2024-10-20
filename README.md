@@ -157,7 +157,7 @@ After cloning the repository and installing the dependencies, run the following 
 npm start
 ```
 
-You can then log in using any dummy credentials supported by the API (e.g., `emilys`, `emilyspass`). Once logged in, you’ll be able to access the Profile page and view personalized user data.
+### You can then log in using any dummy credentials supported by the API userName and password (e.g.,  `emilys`, `emilyspass`). Once logged in, you’ll be able to access the Profile page and view personalized user data.
 
 ## 9. **Future Improvements**
 
